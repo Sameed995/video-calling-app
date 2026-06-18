@@ -26,8 +26,8 @@ const App = () => {
 
 
   return (
-<div className=" h-screen" data-theme="dark">
-    <button onClick={() => toast.success("This is a success message!")}>Create Toast</button>
+<div className=" h-screen" data-theme="light">
+
     <Routes>
       <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />} />
       <Route path="/signup" element={!authUser ? <SignupPage /> : <Navigate to="/" />} />
