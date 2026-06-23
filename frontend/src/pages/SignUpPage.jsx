@@ -113,7 +113,13 @@ const SignUpPage = () => {
                     </label>
                   </div>
                 </div>
-                <button className="btn btn-primary w-full" type="submit">{isPending ? "Signing Up..." : "Sign Up"}
+                <button className="btn btn-primary w-full" type="submit">
+                  {isPending ?(<>
+                    <span className="loading loading-spinner loading-xs"></span>
+                    Loading...
+                  </>
+                ) : ("Create Account")
+                }
                 </button>
                 <div className="text-center mt-4">
                   <p className="text-sm">
