@@ -170,8 +170,6 @@ Create a `.env` file inside the `frontend` directory:
 VITE_STREAM_API_KEY=your_stream_api_key
 ```
 
->  Never commit your `.env` files. Make sure they're listed in `.gitignore`.
-
 ### Installation
 
 Clone the repository:
